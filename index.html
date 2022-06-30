@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="YiShin-Cheng">
+        <meta name="description" content="Cat feeding page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles/style.css" rel="stylesheet" type="text/css">
+        <title>貓咪餵食器</title>
+    </head>
+    <body>
+        <h1>貓咪餵食器</h1>
+        <div class="wrapper">
+            <div class="manipulate_menu">
+                <h2 class="section_title">Feeding Field</h2>
+                <p>Choose one or all cats to feed</p>
+                <form id="action_area" action="" method="">
+                    <input type="radio" id="cat_1" name="feeding_cat" value="cat_1">
+                    <label for="cat_1">Cat</label><br>
+                    <input type="radio" id="cat_2" name="feeding_cat" value="cat_2">
+                    <label for="cat_2">貓</label><br>
+                    <input type="radio" id="cat_3" name="feeding_cat" value="cat_3">
+                    <label for="cat_3">猫</label><br>
+                    <input type="radio" id="cat_4" name="feeding_cat" value="cat_4">
+                    <label for="cat_4">chat</label><br>
+                    <input type="radio" id="cat_5" name="feeding_cat" value="cat_5">
+                    <label for="cat_5">gato</label><br>
+                    <input type="radio" id="all" name="feeding_cat" value="all">
+                    <label for="all">All cats</label><br>
+                    
+                    <label for="breed">Breed:</label><br>
+                    <input type="text" id="breed" name="breed" placeholder="Empty for all breeds"><br>
+                    <p class="hints">Hint: There're 3 types of cats, Big_cat, Middle_cat and Small_cat</p>
+                    <input type="button" onclick="FeedFunction()" value="Feed!">
+                </form>
+            </div>
+            <div class="cats_album">
+                <div id="cat1">
+                    <img src="./static/img/cat_img/貓咪_正常/cat1.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat1_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat1.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/feed.png" id="cover1">
+                    <div class="about_cat">
+                        <div class="cat_name">Cat</div>
+                        <div class="bio">Bio</div>
+                        <div class="cat_breed">Big</div>
+                    </div>
+                </div>
+                <div id="cat_2">
+                    <div class="cover"></div>
+                    <img src="./static/img/cat_img/貓咪_正常/cat2.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat2_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat2.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/feed.png" id="cover2">
+                    <div class="about_cat">
+                        <div class="cat_name">貓</div>
+                        <div class="bio">Bio</div>
+                        <div class="cat_breed">Small</div>
+                    </div>
+                </div>
+                <div id="cat_3">
+                    <div class="cover"></div>
+                    <img src="./static/img/cat_img/貓咪_正常/cat3.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat3_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat3.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/feed.png" id="cover3">
+                    <div class="about_cat">
+                        <div class="cat_name">猫</div>
+                        <div class="bio">Bio</div>
+                        <div class="cat_breed">Big</div>
+                    </div>
+                </div>
+                <div id="cat_4">
+                    <div class="cover"></div>
+                    <img src="./static/img/cat_img/貓咪_正常/cat4.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat4_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat4.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/feed.png" id="cover4">
+                    <div class="about_cat">
+                        <div class="cat_name">chat</div>
+                        <div class="bio">Bio</div>
+                        <div class="cat_breed">Middle</div>
+                    </div>
+                </div>
+                <div id="cat_5">
+                    <div class="cover"></div>
+                    <img src="./static/img/cat_img/貓咪_正常/cat5.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat5_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat5.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/feed.png" id="cover5">
+                    <div class="about_cat">
+                        <div class="cat_name">gato</div>
+                        <div class="bio">Bio</div>
+                        <div class="cat_breed">Small</div>
+                    </div>
+                </div>
+            </div>
+            <div class="remain">
+
+            </div>
+
+        </div>
+
+    </body>
+
+    <script type="text/javascript" src="./scripts/Feeding_reaction.js"></script>
+    <!-- <script>
+        function myFunction(){
+            console.log("Success try!!!")
+        }
+    </script> -->
+
+</html>
