@@ -56,12 +56,6 @@ h1{
     opacity: 0.7;
 }
 
-.hints:hover{
-    opacity: 1;
-    color: blue;
-    font-size:medium;
-}
-
 .cats_album{
     background-color:plum;
     border-radius: 25px;
@@ -82,7 +76,7 @@ h1{
     position: relative;
 }
 
-#cat_pic{
+.cat_pic{
     position:absolute;
     z-index: 10;
 }
@@ -107,7 +101,7 @@ h1{
     /* text-align: center; */
 }
 
-.cats_album div.about_cat div.cat_name{
+.cats_album div.about_cat button.cat_name{
     background-color: darkblue;
     /* background: rgba(127,255,272,0.5); */
     color: white;
@@ -151,8 +145,22 @@ h1{
 
 
 
-/* .remain{
+.remain{
     grid-row: 2/3;
-    grid-column: 1/2;
-    background-color: green;
-} */
+    grid-column: 2/3;
+    /* background-color: green; */
+}
+
+.Reset_Bar{
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 20%;
+    height: 40%;
+    font-size: large;
+    border-radius: 25px;
+    background-color: gold;
+}
+
+.Reset_Bar:hover{
+    transform: scale(1.2);
+}

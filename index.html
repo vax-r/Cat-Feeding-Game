@@ -30,63 +30,66 @@
                     
                     <label for="breed">Breed:</label><br>
                     <input type="text" id="breed" name="breed" placeholder="Empty for all breeds"><br>
-                    <p class="hints">Hint: There're 3 types of cats, Big_cat, Middle_cat and Small_cat</p>
+                    <p class="hints">
+                        Hint: There're 3 types of cats, Big_cat, Middle_cat and Small_cat<br>
+                        Feed limit: Big_cat: 3, Middle_cat:2, Small_cat: 1<br>
+                    </p>
                     <input type="button" onclick="FeedFunction()" value="Feed!">
                 </form>
             </div>
             <div class="cats_album">
                 <div id="cat1">
-                    <img src="./static/img/cat_img/貓咪_正常/cat1.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat1_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat1.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/貓咪_正常/cat1.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat1_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat1.jpg'" class="cat_pic" id="cat_pic1">
                     <img src="./static/img/cat_img/feed.png" id="cover1">
                     <div class="about_cat">
-                        <div class="cat_name">Cat</div>
+                        <button class="cat_name" onclick="playAudio('Cat' , 'en')">Cat</button>
                         <div class="bio">Bio</div>
                         <div class="cat_breed">Big</div>
                     </div>
                 </div>
                 <div id="cat_2">
                     <div class="cover"></div>
-                    <img src="./static/img/cat_img/貓咪_正常/cat2.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat2_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat2.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/貓咪_正常/cat2.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat2_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat2.jpg'" class="cat_pic" id="cat_pic2">
                     <img src="./static/img/cat_img/feed.png" id="cover2">
                     <div class="about_cat">
-                        <div class="cat_name">貓</div>
+                        <button class="cat_name" onclick="playAudio('貓' , 'cmn')">貓</button>
                         <div class="bio">Bio</div>
                         <div class="cat_breed">Small</div>
                     </div>
                 </div>
                 <div id="cat_3">
                     <div class="cover"></div>
-                    <img src="./static/img/cat_img/貓咪_正常/cat3.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat3_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat3.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/貓咪_正常/cat3.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat3_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat3.jpg'" class="cat_pic" id="cat_pic3">
                     <img src="./static/img/cat_img/feed.png" id="cover3">
                     <div class="about_cat">
-                        <div class="cat_name">猫</div>
+                        <button class="cat_name" onclick="playAudio('猫' , 'ja')">猫</button>
                         <div class="bio">Bio</div>
                         <div class="cat_breed">Big</div>
                     </div>
                 </div>
                 <div id="cat_4">
                     <div class="cover"></div>
-                    <img src="./static/img/cat_img/貓咪_正常/cat4.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat4_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat4.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/貓咪_正常/cat4.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat4_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat4.jpg'" class="cat_pic" id="cat_pic4">
                     <img src="./static/img/cat_img/feed.png" id="cover4">
                     <div class="about_cat">
-                        <div class="cat_name">chat</div>
+                        <button class="cat_name" onclick="playAudio('chat' , 'fr')">chat</button>
                         <div class="bio">Bio</div>
                         <div class="cat_breed">Middle</div>
                     </div>
                 </div>
                 <div id="cat_5">
                     <div class="cover"></div>
-                    <img src="./static/img/cat_img/貓咪_正常/cat5.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat5_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat5.jpg'" id="cat_pic">
+                    <img src="./static/img/cat_img/貓咪_正常/cat5.jpg" onmousedown="this.src='./static/img/cat_img/貓咪_變更/cat5_inverse.jpg' ;" onmouseup="this.src='./static/img/cat_img/貓咪_正常/cat5.jpg'" class="cat_pic" id="cat_pic5">
                     <img src="./static/img/cat_img/feed.png" id="cover5">
                     <div class="about_cat">
-                        <div class="cat_name">gato</div>
+                        <button class="cat_name" onclick="playAudio('gato' , 'es')">gato</button>
                         <div class="bio">Bio</div>
                         <div class="cat_breed">Small</div>
                     </div>
                 </div>
             </div>
             <div class="remain">
-
+                <button class="Reset_Bar" onclick="Reset()">Reset</button>
             </div>
 
         </div>
